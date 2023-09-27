@@ -1,0 +1,9 @@
+# Utilizamos la imagen oficial de PostgreSQL
+FROM postgres:latest
+# Establecemos variables de entorno para la base de datos
+ENV POSTGRES_DB ferox_db
+ENV POSTGRES_USER ferox_user
+ENV POSTGRES_PASSWORD ferox_password
+
+# Puerto por defecto de PostgreSQL (5432)
+EXPOSE 5432
